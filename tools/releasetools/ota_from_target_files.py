@@ -829,22 +829,23 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   device = target_info.GetBuildProp("ro.product.device")
 
   script.Print("------------------------------------------");
-  script.Print("  ____                  _____         _   ");
-  script.Print(" |  _ \  ___ _ __ _ __ |  ___|__  ___| |_ ");
-  script.Print(" | | | |/ _ \ '__| '_ \| |_ / _ \/ __| __|");
-  script.Print(" | |_| |  __/ |  | |_) |  _|  __/\__ \ |_ ");
-  script.Print(" |____/ \___|_|  | .__/|_|  \___||___/\__|");
-  script.Print("                 |_|                      ");
   script.Print("                                          ");
-  script.Print("      Are you ready for the Derpness?     ");
+  script.Print("   ______  ___  __________ __  ____  ____ ");
+  script.Print("  / __/\ \/ / |/ /_  __/ // / / __ \/ __/ ");
+  script.Print(" _\ \   \  /    / / / / _  / / /_/ /\ \   ");
+  script.Print("/___/   /_/_/|_/ /_/ /_//_/  \____/___/   ");
+  script.Print("                                          ");
   script.Print("                                          ");
   script.Print("------------------------------------------");
+  script.Print("                                          ");
   script.Print(" Android version: %s"%(android_version));
   script.Print(" Build id: %s"%(build_id));
   script.Print(" Build date: %s"%(build_date));
   script.Print(" Security patch: %s"%(security_patch));
   script.Print(" Device: %s"%(device));
+  script.Print("                                          ");
   script.Print("------------------------------------------");
+  script.Print("                                          ");
   device_specific.FullOTA_InstallBegin()
 
   CopyInstallTools(output_zip)
